@@ -16,11 +16,11 @@ You can define swig loader using webpack configuration.
 
 ``` javascript
 {
-    module: {
-        loaders: [
-            { test: /\.swig$/, loader: "swig-loader" }
-        ]
-    }
+  module: {
+    loaders: [
+      { test: /\.swig$/, loader: "swig-loader" }
+    ]
+  }
 };
 ```
 
@@ -40,7 +40,7 @@ You can pass [swig options](http://paularmstrong.github.io/swig/docs/api/#SwigOp
 // Option #1 - Swig loader global options
 var swigLoader = require('swig-loader');
 swigLoader.options({
-    varControls: ['{:', ':}']
+  varControls: ['{:', ':}']
 });
 
 // Option #2 - Swig loader query parameters

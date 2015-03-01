@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 	path = require('path'),
 	fs = require('fs'),
 	mkdirp = require('mkdirp'),
-	clean = require('gulp-clean'),
+	clean = require('gulp-rimraf'),
 	jscs = require('gulp-jscs'),
 	istanbul = require('gulp-istanbul');
 
