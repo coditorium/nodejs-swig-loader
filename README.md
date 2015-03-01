@@ -34,7 +34,7 @@ var template = require('swig!./template.swig');
 
 ### Passing swig options
 
-You can pass [swig options](http://paularmstrong.github.io/swig/docs/api/#SwigOpts) to the loader using `swigLoader.options({ ... })` or loader query parameters. If you choose loader query parameters take a look at query (webpack standard query format)[https://github.com/webpack/loader-utils#parsequery].
+You can pass [swig options](http://paularmstrong.github.io/swig/docs/api/#SwigOpts) to the loader using `swigLoader.options({ ... })` or loader query parameters. If you choose loader query parameters take a look at query [webpack standard query format](https://github.com/webpack/loader-utils#parsequery).
 
 ``` javascript
 // Option #1 - Swig loader global options
