@@ -49,7 +49,7 @@ var swigLoader = require('swig?varControls[]={:&varControls[]=:}!./template.swig
 
 ### Passing template parameters
 
-You can pass template parameters to the loader using resource query parameters. If you need to pass some parameters take a look at query (webpack standard query format)[https://github.com/webpack/loader-utils#parsequery].
+You can pass template parameters to the loader using resource query parameters. If you need to pass some parameters take a look at query [webpack standard query format](https://github.com/webpack/loader-utils#parsequery).
 
 ``` javascript
 var swigLoader = require('swig!./template.swig?username=John');
