@@ -1,7 +1,7 @@
 {
   "author": "Paweł Mendelski <pawel.mendelski@coditorium.com>",
   "name": "swig-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Webpack loader for swig templates",
   "main": "index.js",
   "license": "MIT",
