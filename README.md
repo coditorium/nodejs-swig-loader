@@ -54,3 +54,24 @@ You can pass template parameters to the loader using resource query parameters. 
 ``` javascript
 var swigLoader = require('swig!./template.swig?username=John');
 ```
+
+### Customizers
+
+You can customize `query`, `resourceQuery` and `result` using customizers:
+
+``` javascript
+var swigLoader = require('swig-loader');
+
+swigLoader.queryCustomizer(function(query, templatepath) {
+    // modify query
+});
+
+swigLoader.resourceQueryCustomizer(function(resourceQuery, templatepath) {
+    // modify resource query
+});
+
+swigLoader.resultCustomizer(function(query, templatepath, resourceQuery, query) {
+    // modify result and don't forget to return it!
+    return result;
+});
+```

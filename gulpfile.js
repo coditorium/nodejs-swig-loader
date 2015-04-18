@@ -22,9 +22,13 @@ var gulp = require('gulp'),
 })();
 
 function initTestMode() {
-	global.testMode = true;
+	global.__testMode = true;
+	global.__projectDir = __dirname;
 	global.requireLib = function(libmodule) {
 		return require(path.resolve(__dirname, 'lib', libmodule));
+	};
+	global.requireTest = function(libmodule) {
+		return require(path.resolve(__dirname, 'test', libmodule));
 	};
 }
 

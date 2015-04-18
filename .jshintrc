@@ -85,6 +85,8 @@
 	// Custom Globals
 	"globals": {				// additional predefined global variables
 		// Custom require used in test mode
-		"requireLib": false
+		"requireLib": false,
+		"requireTest": false,
+		"__projectDir": false
 	}
 }

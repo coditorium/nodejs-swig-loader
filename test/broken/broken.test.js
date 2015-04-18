@@ -2,7 +2,7 @@
 
 var expect = require('chai').expect,
 	path = require('path'),
-	load = require('../load');
+	load = requireTest('load');
 
 describe('Error test: swig-loader', function() {
 

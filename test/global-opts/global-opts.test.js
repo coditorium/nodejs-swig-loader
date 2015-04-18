@@ -3,8 +3,8 @@
 var expect = require('chai').expect,
 	path = require('path'),
 	chalk = require('chalk'),
-	loader = require('../../index'),
-	load = require('../load');
+	loader = require(__projectDir),
+	load = requireTest('load');
 
 describe('Custom options test: swig-loader', function() {
 
