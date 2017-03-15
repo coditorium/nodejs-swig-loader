@@ -17,7 +17,7 @@ module.exports = function(filepath, callback) {
 			libraryTarget: 'commonjs2'
 		},
 		module: {
-			loaders: [
+			rules: [
 				{ test: /\.html(\?.*)?$/, loader: __projectDir }
 			]
 		}
