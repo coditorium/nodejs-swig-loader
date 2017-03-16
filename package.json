@@ -15,7 +15,9 @@
   "scripts": {
     "test": "gulp checkstyle test",
     "ci": "gulp ci",
-    "coveralls": "cat build/test/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "cat build/test/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "preversion": "npm whoami && npm run ci",
+    "postversion": "git push origin master --tags && npm publish"
   },
   "keywords": [
     "coditorium",
