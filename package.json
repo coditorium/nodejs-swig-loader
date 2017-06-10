@@ -13,11 +13,13 @@
     "url": "https://github.com/coditorium/nodejs-swig-loader/issues"
   },
   "scripts": {
+    "clean": "rimraf ./build",
     "test": "gulp checkstyle test",
     "ci": "gulp ci",
     "coveralls": "cat build/test/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "preversion": "npm whoami && npm run ci",
-    "postversion": "git push origin master --tags && npm publish"
+    "version": "git add -A",
+    "postversion": "git push origin master --tags && npm publish && npm run clean"
   },
   "keywords": [
     "coditorium",
@@ -45,6 +47,7 @@
     "mkdirp": "^0.5.1",
     "mocha": "2.2.5",
     "mocha-jenkins-reporter": "~0.1.9",
+    "rimraf": "^2.6.1",
     "webpack": "2.2.1"
   },
   "engines": {
