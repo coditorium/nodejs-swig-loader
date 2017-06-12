@@ -18,7 +18,15 @@ You can define swig loader using webpack configuration.
 {
   module: {
     loaders: [
-      { test: /\.swig$/, loader: "swig-loader" }
+      { 
+	  	test: /\.swig$/, 
+		loader: "swig-loader" , 
+		query: {
+          locals: {
+            config: {'cdn': 'doamin'}
+          },
+          env: 'env'
+		}
     ]
   }
 };
